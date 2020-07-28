@@ -16,7 +16,7 @@ public class MainFrame extends JFrame {
 
     public MainFrame() {
         setTitle("Logic Builder");
-        setSize(800, 715);
+        setSize(810, 725);
         setResizable(false);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setLayout(null);
