@@ -1,5 +1,5 @@
 # logic-builder
-An ugly & interactive logic gate visualizer written in Java using plain old Java Swing
+An ugly & interactive logic gate visualizer written in Java using plain old Java Swing\
 Contributions are more than welcome!
 
 ## Idea
