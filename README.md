@@ -8,6 +8,11 @@ The idea for this program came to mind shortly after I made my little alu repres
 ## Use cases
 This program can be used to understand how logic gates work, visualize complex structures or just play around with different gates.
 
+## Controls
+- Hold left click to drag nodes / draw connections
+- Right click to remove a node
+- Hold middle click to move the whole screen
+
 ## Available gates
 - AND, OR, XOR, NOT (Inverter)
 - Splitter (Takes a signal and outputs the same signal twice)
