@@ -8,6 +8,8 @@ import de.cerus.logicbuilder.output.impl.DefaultOutput;
  * This enum maps nodes by their visible name to their add action.
  *
  * @author Paul2708
+ * @version 1.0.0
+ * @since 1.0.1
  */
 public enum NodeMap {
 
@@ -28,23 +30,6 @@ public enum NodeMap {
     }
 
     /**
-     * Get the item name.
-     * The name is used to list the nodes in the combobox.
-     *
-     * @return item name
-     */
-    public String getItemName() {
-        return itemName;
-    }
-
-    /**
-     * Run the add action, so the {@link NodeRegistry} adds the node.
-     */
-    public void run() {
-        addAction.run();
-    }
-
-    /**
      * Get the node mapping by its item name.
      *
      * @param name combo box item name
@@ -59,5 +44,22 @@ public enum NodeMap {
         }
 
         throw new IllegalArgumentException(String.format("%s cannot be matched as Node", name));
+    }
+
+    /**
+     * Get the item name.
+     * The name is used to list the nodes in the combobox.
+     *
+     * @return item name
+     */
+    public String getItemName() {
+        return itemName;
+    }
+
+    /**
+     * Run the add action, so the {@link NodeRegistry} adds the node.
+     */
+    public void run() {
+        addAction.run();
     }
 }
