@@ -19,6 +19,7 @@ public enum NodeMap {
     XOR_GATE("XOR Gate", () -> NodeRegistry.addGate(new XorGate())),
     NOT_GATE("NOT Gate", () -> NodeRegistry.addGate(new InverterGate())),
     SPLITTER_GATE("Splitter Gate", () -> NodeRegistry.addGate(new SplitterGate())),
+    BCD_TO_7SEGMENT_GATE("BCD to 7-Segment", () -> NodeRegistry.addGate(new BCDToSevenSegmentGate())),
     INPUT("Input", () -> NodeRegistry.addInput(new DefaultInput())),
     OUTPUT("Output", () -> NodeRegistry.addOutput(new DefaultOutput())),
     SEVEN_SEGMENT_DISPLAY("7-Segment Display", () -> NodeRegistry.addOutput(new SevenSegmentDisplay()));
