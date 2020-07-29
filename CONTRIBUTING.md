@@ -4,6 +4,6 @@
 3. If you're working on an issue please indicate that by commenting on said issue.
 4. Please get in touch with me before making major changes.
 
-Side note: Issues with the label `up for grabs` can be worked on without needing to contact me first (as long as you're not making any major changes).
+Side note: Issues with the label [`up for grabs`](https://github.com/RealCerus/logic-builder/labels/up%20for%20grabs) can be worked on without needing to contact me first (as long as you're not making any major changes).
 
 Thank you!
