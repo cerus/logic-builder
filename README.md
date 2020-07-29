@@ -22,12 +22,12 @@ The following are not really gates, but I don't know where else I could list the
 - Output
 
 ## Known bugs
-- StackOverflowError when creating infinite recursion (#1)
+- StackOverflowError when creating infinite recursion ([#1](https://github.com/RealCerus/logic-builder/issues/1))
 
 ## Todo
-- Finish javadoc comments (#2)
-- Add Json exporter and importer (#3)
-- Add a tool to create custom gates from Json exports (#4)
+- Finish javadoc comments ([#2](https://github.com/RealCerus/logic-builder/issues/2))
+- Add Json exporter and importer ([#3](https://github.com/RealCerus/logic-builder/issues/3))
+- Add a tool to create custom gates from Json exports ([#4](https://github.com/RealCerus/logic-builder/issues/4))
 - Maybe add more gates?
 
 ## Gallery
