@@ -16,10 +16,13 @@ This program can be used to understand how logic gates work, visualize complex s
 ## Available gates
 - AND, OR, XOR, NOT (Inverter)
 - Splitter (Takes a signal and outputs the same signal twice)
+- BCD to 7-segment display gate
 
 The following are not really gates, but I don't know where else I could list them:
 - Input (Can be altered by the user; Double click to toggle the state)
+- BCD Input (Converts a decimal into a binary-coded decimal)
 - Output
+- 7-Segment display output
 
 ## Known bugs
 - StackOverflowError when creating infinite recursion ([#1](https://github.com/RealCerus/logic-builder/issues/1))
@@ -38,7 +41,9 @@ The following are not really gates, but I don't know where else I could list the
 
 <img src="https://nobody-will.make-america-great-aga.in/PbkkPDavKIyMyUyR" alt="Picture 2"><br>
 
-<img src="https://nobody-will.make-america-great-aga.in/oHKOUfAIduqUzmZN" alt="Picture 3">
+<img src="https://nobody-will.make-america-great-aga.in/oHKOUfAIduqUzmZN" alt="Picture 3"><br>
+
+<img src="https://cerus-dev.de/img/logic-builder-7-segment.gif" alt="Picture 4">
 </details>
 
 ## License
