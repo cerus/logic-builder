@@ -39,6 +39,9 @@ public class SevenSegmentDisplay extends Output {
         graphics.setColor(Color.LIGHT_GRAY);
         graphics.fillRect(x, y, width, height);
 
+        graphics.setColor(Color.BLACK);
+        graphics.drawRect(x, y, width, height);
+
         for (int i = 0; i < 7; i++) {
             drawSegment(i, graphics);
         }

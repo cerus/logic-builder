@@ -1,6 +1,7 @@
 package de.cerus.logicbuilder.node;
 
 import de.cerus.logicbuilder.gate.impl.*;
+import de.cerus.logicbuilder.input.impl.BCDInput;
 import de.cerus.logicbuilder.input.impl.DefaultInput;
 import de.cerus.logicbuilder.output.impl.DefaultOutput;
 import de.cerus.logicbuilder.output.impl.SevenSegmentDisplay;
@@ -21,6 +22,7 @@ public enum NodeMap {
     SPLITTER_GATE("Splitter Gate", () -> NodeRegistry.addGate(new SplitterGate())),
     BCD_TO_7SEGMENT_GATE("BCD to 7-Segment", () -> NodeRegistry.addGate(new BCDToSevenSegmentGate())),
     INPUT("Input", () -> NodeRegistry.addInput(new DefaultInput())),
+    BCD_INPUT("BCD Input", () -> NodeRegistry.addInput(new BCDInput())),
     OUTPUT("Output", () -> NodeRegistry.addOutput(new DefaultOutput())),
     SEVEN_SEGMENT_DISPLAY("7-Segment Display", () -> NodeRegistry.addOutput(new SevenSegmentDisplay()));
 

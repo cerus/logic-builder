@@ -58,12 +58,24 @@ public class BCDToSevenSegmentGate extends MultiGate {
 
         graphics.setColor(Color.BLACK);
         graphics.drawRect(x, y, width, height);
+
+        String str = "BCD to";
+        graphics.drawString(str, x + (width / 2) - (graphics.getFontMetrics().stringWidth(str) / 2), y + 20);
+        str = "7 Segment";
+        graphics.drawString(str, x + (width / 2) - (graphics.getFontMetrics().stringWidth(str) / 2), y + 40);
+        str = "display";
+        graphics.drawString(str, x + (width / 2) - (graphics.getFontMetrics().stringWidth(str) / 2), y + 60);
+
+        str = "In";
+        graphics.drawString(str, x + 5, y + 120);
+        str = "Out";
+        graphics.drawString(str, x + width - (graphics.getFontMetrics().stringWidth(str)) - 5, y + 120);
     }
 
     @Override
     public void updatePosition(int x, int y) {
-        for(int i = 0; i < connectors.size(); i++) {
-            if(i <= 3) {
+        for (int i = 0; i < connectors.size(); i++) {
+            if (i <= 3) {
                 connectors.get(i).updatePosition(x - (12 / 2), y + 10 + (20 * i));
             } else {
                 connectors.get(i).updatePosition(x + width - (12 / 2), y + 10 + (20 * (i - 4)));
