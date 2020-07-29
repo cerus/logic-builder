@@ -159,11 +159,11 @@ public class NodeRegistry {
                 .filter(connector -> connector.getBounds().contains(x, y))
                 .findAny()
                 .orElse(inputs.stream()
-                        .map(Input::getOutputConnector)
+                        .flatMap(input -> input.getConnectors().stream())
                         .filter(connector -> connector.getBounds().contains(x, y))
                         .findAny()
                         .orElse(outputs.stream()
-                                .map(Output::getInConnector)
+                                .flatMap(output -> output.getConnectors().stream())
                                 .filter(connector -> connector.getBounds().contains(x, y))
                                 .findAny()
                                 .orElse(null))));
