@@ -1,10 +1,8 @@
 package de.cerus.logicbuilder.gui;
 
 import com.sun.java.swing.plaf.windows.WindowsLookAndFeel;
-import de.cerus.logicbuilder.gate.impl.*;
-import de.cerus.logicbuilder.input.impl.DefaultInput;
+import de.cerus.logicbuilder.node.NodeMap;
 import de.cerus.logicbuilder.node.NodeRegistry;
-import de.cerus.logicbuilder.output.impl.DefaultOutput;
 
 import javax.swing.*;
 import javax.swing.border.LineBorder;
@@ -39,13 +37,9 @@ public class MainFrame extends JFrame {
 
         JComboBox<String> nodeChooser = new JComboBox<>();
         DefaultComboBoxModel<String> model = new DefaultComboBoxModel<>();
-        model.addElement("AND Gate");
-        model.addElement("OR Gate");
-        model.addElement("XOR Gate");
-        model.addElement("NOT Gate");
-        model.addElement("Splitter Gate");
-        model.addElement("Input");
-        model.addElement("Output");
+        for (NodeMap node : NodeMap.values()) {
+            model.addElement(node.getItemName());
+        }
         nodeChooser.setModel(model);
         nodeChooser.setBounds(5, 660, 100, 20);
 
@@ -69,30 +63,7 @@ public class MainFrame extends JFrame {
                 return;
             }
 
-            switch (nodeChooser.getSelectedItem().toString()) {
-                case "AND Gate":
-                    NodeRegistry.addGate(new AndGate());
-                    break;
-                case "OR Gate":
-                    NodeRegistry.addGate(new OrGate());
-                    break;
-                case "XOR Gate":
-                    NodeRegistry.addGate(new XorGate());
-                    break;
-                case "NOT Gate":
-                    NodeRegistry.addGate(new InverterGate());
-                    break;
-                case "Splitter Gate":
-                    NodeRegistry.addGate(new SplitterGate());
-                    break;
-                case "Input":
-                    NodeRegistry.addInput(new DefaultInput());
-                    break;
-                case "Output":
-                    NodeRegistry.addOutput(new DefaultOutput());
-                    break;
-            }
-
+            NodeMap.getByName(nodeChooser.getSelectedItem().toString()).run();
             panel.repaint();
         };
     }
