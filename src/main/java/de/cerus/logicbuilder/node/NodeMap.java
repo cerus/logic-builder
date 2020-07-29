@@ -3,6 +3,7 @@ package de.cerus.logicbuilder.node;
 import de.cerus.logicbuilder.gate.impl.*;
 import de.cerus.logicbuilder.input.impl.DefaultInput;
 import de.cerus.logicbuilder.output.impl.DefaultOutput;
+import de.cerus.logicbuilder.output.impl.SevenSegmentDisplay;
 
 /**
  * This enum maps nodes by their visible name to their add action.
@@ -19,7 +20,8 @@ public enum NodeMap {
     NOT_GATE("NOT Gate", () -> NodeRegistry.addGate(new InverterGate())),
     SPLITTER_GATE("Splitter Gate", () -> NodeRegistry.addGate(new SplitterGate())),
     INPUT("Input", () -> NodeRegistry.addInput(new DefaultInput())),
-    OUTPUT("Output", () -> NodeRegistry.addOutput(new DefaultOutput()));
+    OUTPUT("Output", () -> NodeRegistry.addOutput(new DefaultOutput())),
+    SEVEN_SEGMENT_DISPLAY("7-Segment Display", () -> NodeRegistry.addOutput(new SevenSegmentDisplay()));
 
     private final String itemName;
     private final Runnable addAction;
