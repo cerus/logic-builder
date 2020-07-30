@@ -2,6 +2,9 @@
 An ugly & interactive logic gate visualizer written in Java using plain old Java Swing\
 Contributions are more than welcome!
 
+## Download
+[![GitHub All Releases](https://img.shields.io/github/downloads/RealCerus/logic-builder/total?style=for-the-badge)](https://github.com/RealCerus/logic-builder/releases/latest)
+
 ## Idea
 The idea for this program came to mind shortly after I made my little alu representation. I was building a little ripple carry adder in the popular sandbox game Minecraft when I suddenly got the idea for this program.
 
