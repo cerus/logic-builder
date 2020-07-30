@@ -1,4 +1,7 @@
 # logic-builder
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 An ugly & interactive logic gate visualizer written in Java using plain old Java Swing\
 Contributions are more than welcome!
 
@@ -51,3 +54,22 @@ The following are not really gates, but I don't know where else I could list the
 
 ## License
 [MIT](LICENSE)
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://cerus-dev.de"><img src="https://avatars3.githubusercontent.com/u/46848982?v=4" width="100px;" alt=""/><br /><sub><b>Maximilian</b></sub></a><br /><a href="https://github.com/RealCerus/logic-builder/issues?q=author%3ARealCerus" title="Bug reports">🐛</a> <a href="https://github.com/RealCerus/logic-builder/commits?author=RealCerus" title="Code">💻</a> <a href="https://github.com/RealCerus/logic-builder/commits?author=RealCerus" title="Documentation">📖</a> <a href="#ideas-RealCerus" title="Ideas, Planning, & Feedback">🤔</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

@@ -1,0 +1,27 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "RealCerus",
+      "name": "Maximilian",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/46848982?v=4",
+      "profile": "https://cerus-dev.de",
+      "contributions": [
+        "bug",
+        "code",
+        "doc",
+        "ideas"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "logic-builder",
+  "projectOwner": "RealCerus",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
