@@ -1,0 +1,36 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "RealCerus",
+      "name": "Maximilian",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/46848982?v=4",
+      "profile": "https://cerus-dev.de",
+      "contributions": [
+        "bug",
+        "code",
+        "doc",
+        "ideas"
+      ]
+    },
+    {
+      "login": "Paul2708",
+      "name": "Paul",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/12039677?v=4",
+      "profile": "https://bitbucket.org/Paul2708/",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "logic-builder",
+  "projectOwner": "RealCerus",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
